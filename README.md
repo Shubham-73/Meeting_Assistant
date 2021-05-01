@@ -1,13 +1,16 @@
 # Meeting_Assistant
 
-# /adduser
+## Unit test
+   Four Unit tests to test Repository of project
+
+## /adduser
   Adds a new user to Database
   E.g. Payload : 
   {
     "owner": "user2"
   }
 
-# /setmmet
+## /setmeet
   Adds a new meeting, given both the owner and attendee are present in DB, else add the new User and try again
   E.g. Payload:
   {
@@ -21,7 +24,7 @@
     }
   }
   
-# /free
+## /free
   Given 2 calendars, and duration, returns the free slots... If no slot availaible returns empty
     E.g. Payload:
     {
@@ -52,7 +55,7 @@
     "duration": 30
 }
 
-# /conflict
+## /conflict
   Given a new meeting request, returns the conflict participants, if no conflict then return a string "No Conflicts"
   {
     "calendarBean": {
